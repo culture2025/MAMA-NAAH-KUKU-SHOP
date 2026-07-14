@@ -51,9 +51,9 @@ const zones = [
 ];
 
 const testimonials = [
-  { quote: "The eggs are always fresh and the delivery man calls before he arrives.", name: "Abena, Dansoman" },
-  { quote: "Best dressed chicken in the area. I order every Friday for the weekend.", name: "Kwesi, East Legon" },
-  { quote: "Ordered a crate of eggs on WhatsApp and it was at my door in an hour.", name: "Linda, Adenta" },
+  { quote: "Mzigo unafika kwa muda sahihi na huduma ni bora kabisa.", name: "Khadija, Dar es Salaam" },
+  { quote: "Kuku na Mayai kwa ujumla zina ubora wa hali ya juu na huduma ni safi.", name: "Deus Mwasibila, Kitunda, Dar es Salaam" },
+  { quote: "Huduma ni bora kabisa na unaweza kuagiza na kuweka order kwa njia ya whatsApp.", name: "Rahma, Banana,Dar es Salaam" },
 ];
 
 function useReveal() {
