@@ -69,7 +69,7 @@ export default function MamaNaaKukuShop() {
   const [menuOpen, setMenuOpen] = useState(false);
   const shown = useReveal();
 
-  const waLink = "https://wa.me/233000000000?text=Hello%20Mama%20Naa%20Kuku%20Shop%2C%20I%27d%20like%20to%20order";
+  const waLink = "https://wa.me/255767297987?text=Hello%20Mama%20Naa%20Kuku%20Shop%2C%20I%27d%20like%20to%20order";
 
   return (
     <div style={{ fontFamily: "'Work Sans', sans-serif", color: C.charcoal, backgroundColor: C.cream }}>
@@ -316,9 +316,9 @@ export default function MamaNaaKukuShop() {
           </a>
         </div>
         <div className="flex flex-wrap gap-8 text-sm pt-8 border-t" style={{ borderColor: "rgba(255,255,255,0.12)", color: C.sage }}>
-          <span className="flex items-center gap-2"><MapPin size={14} /> [Add your shop address]</span>
-          <span className="flex items-center gap-2"><Clock size={14} /> Mon–Sat, 7am – 7pm</span>
-          <span className="flex items-center gap-2"><Phone size={14} /> [Add your phone number]</span>
+          <span className="flex items-center gap-2"><MapPin size={14} /> [mbondole secondary]</span>
+          <span className="flex items-center gap-2"><Clock size={14} /> Mon–Sat, Mon-Fri 6:00-19:50, Sat-Sun 8:00-18:50 – 7pm</span>
+          <span className="flex items-center gap-2"><Phone size={14} /> [+255 767 297 987 / +255 651 055 929]</span>
         </div>
         <p className="text-xs mt-10" style={{ color: C.sage, opacity: 0.6 }}>
           &copy; {new Date().getFullYear()} Mama Naa Kuku Shop. All rights reserved.
