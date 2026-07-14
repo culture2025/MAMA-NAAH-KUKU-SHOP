@@ -36,12 +36,12 @@ const fontImport = `
 `;
 
 const products = [
-  { name: "Whole Dressed Chicken", desc: "Cleaned, ready for the pot.", price: "GH₵65", unit: "/ bird" },
-  { name: "Chicken Parts", desc: "Breast, thighs, wings, gizzard — sold by cut.", price: "GH₵18", unit: "/ kg" },
-  { name: "Live Chicken", desc: "Pick it live, we prepare it while you wait.", price: "GH₵55", unit: "/ bird" },
-  { name: "Full Crate of Eggs", desc: "30 eggs, farm-graded.", price: "GH₵58", unit: "/ crate" },
-  { name: "Half Crate of Eggs", desc: "15 eggs, farm-graded.", price: "GH₵30", unit: "/ half crate" },
-  { name: "Egg Tray", desc: "Single tray for the home fridge.", price: "GH₵15", unit: "/ tray" },
+  { name: "Whole Dressed Chicken", desc: "Cleaned, ready for the pot.", price: "TSh 35000", unit: "/ bird" },
+  { name: "Chicken Parts", desc: "Breast, thighs, wings, gizzard — sold by cut.", price: "TSh 12000", unit: "/ kg" },
+  { name: "Live Chicken", desc: "Pick it live, we prepare it while you wait.", price: "TSh 6000 - TSh 45000", unit: "/ bird" },
+  { name: "Full Crate of Eggs", desc: "30 eggs, farm-graded.", price: "TSh 12000", unit: "/ crate" },
+  { name: "Half Crate of Eggs", desc: "15 eggs, farm-graded.", price: "TSh 6500", unit: "/ half crate" },
+  { name: "Egg Tray", desc: "Single tray for the home fridge.", price: "TSh 2500", unit: "/ tray" },
 ];
 
 const zones = [
@@ -124,7 +124,7 @@ export default function MamaNaaKukuShop() {
             className="text-xs tracking-[0.25em] uppercase mb-5"
             style={{ color: C.sage, fontFamily: "'IBM Plex Mono', monospace", opacity: shown ? 1 : 0, animation: shown ? "riseIn 0.6s ease-out" : "none" }}
           >
-            Accra &middot; Family-run since day one
+            Dar es Salaamt; Family-run since day one
           </p>
           <h1
             className="text-4xl md:text-6xl leading-[1.05] mb-6"
@@ -229,7 +229,7 @@ export default function MamaNaaKukuShop() {
                 </span>
               </div>
               <h3 className="text-lg mb-1" style={{ fontFamily: "'Fraunces', serif", fontWeight: 600 }}>{p.name}</h3>
-              <p className="text-sm" style={{ opacity: 0.65 }}>{p.desc}</p>
+              <p className="text-sm" style={{ opacity: 0. }}>{p.desc}</p>
             </div>
           ))}
         </div>
