@@ -35,7 +35,7 @@ const fontImport = `
 }
 `;
 
-const products = [
+const Bidhaa = [
   { name: "Whole Dressed Chicken", desc: "Cleaned, ready for the pot.", price: "TSh 35000", unit: "/ bird" },
   { name: "Chicken Parts", desc: "Breast, thighs, wings, gizzard — sold by cut.", price: "TSh 12000", unit: "/ kg" },
   { name: "Live Chicken", desc: "Pick it live, we prepare it while you wait.", price: "TSh 6000 - TSh 45000", unit: "/ bird" },
@@ -89,8 +89,8 @@ export default function MamaNaaKukuShop() {
         </div>
         <nav className="hidden md:flex items-center gap-8 text-sm" style={{ color: C.sage }}>
           <a href="#products" className="hover:text-white transition-colors">Products</a>
-          <a href="#delivery" className="hover:text-white transition-colors">Delivery</a>
-          <a href="#reviews" className="hover:text-white transition-colors">Reviews</a>
+          <a href="#Usafirishaji" className="hover:text-white transition-colors">Usafirishaji</a>
+          <a href="#Maoni" className="hover:text-white transition-colors">Maoni</a>
           <a
             href={waLink}
             target="_blank"
@@ -98,7 +98,7 @@ export default function MamaNaaKukuShop() {
             className="px-4 py-2 rounded-sm font-medium transition-transform hover:-translate-y-0.5"
             style={{ backgroundColor: C.yolk, color: C.greenDeep }}
           >
-            Order on WhatsApp
+            Agiza kupitia WhatsApp
           </a>
         </nav>
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
@@ -108,9 +108,9 @@ export default function MamaNaaKukuShop() {
       {menuOpen && (
         <div className="md:hidden flex flex-col gap-4 px-6 py-6" style={{ backgroundColor: C.greenDeep, color: C.cream }}>
           <a href="#products" onClick={() => setMenuOpen(false)}>Products</a>
-          <a href="#delivery" onClick={() => setMenuOpen(false)}>Delivery</a>
-          <a href="#reviews" onClick={() => setMenuOpen(false)}>Reviews</a>
-          <a href={waLink} target="_blank" rel="noreferrer" style={{ color: C.yolk }}>Order on WhatsApp</a>
+          <a href="#Usafirishaji" onClick={() => setMenuOpen(false)}>Usafirishaji</a>
+          <a href="#Maoni" onClick={() => setMenuOpen(false)}>Maoni</a>
+          <a href={waLink} target="_blank" rel="noreferrer" style={{ color: C.yolk }}>Agiza kupitia WhatsApp</a>
         </div>
       )}
 
@@ -135,14 +135,13 @@ export default function MamaNaaKukuShop() {
               animation: shown ? "riseIn 0.7s ease-out 0.1s both" : "none",
             }}
           >
-            Fresh from the coop <br /> to your door.
+            Mpya kutoka bandani <br /> hadi mlangoni kwako.
           </h1>
           <p
             className="text-base md:text-lg max-w-xl mb-9"
             style={{ color: C.sage, opacity: shown ? 1 : 0, animation: shown ? "riseIn 0.7s ease-out 0.2s both" : "none" }}
           >
-            Chicken and eggs, dressed and delivered the same day. No middlemen,
-            no cold storage guesswork — just what came off the farm this morning.
+            Kuku na mayai, yanasindikwa na kufikishwa siku hiyo hiyo. Hakuna madalali, hakuna kubahatisha kuhusu ubaridi - ni vile vilivyotoka bandani asubuhi
           </p>
           <div
             className="flex flex-wrap gap-4"
@@ -155,19 +154,19 @@ export default function MamaNaaKukuShop() {
               className="px-6 py-3 rounded-sm font-medium transition-transform hover:-translate-y-0.5"
               style={{ backgroundColor: C.yolk, color: C.greenDeep }}
             >
-              Order on WhatsApp
+              Agiza kupitia WhatsApp
             </a>
             <a
               href="#products"
               className="px-6 py-3 rounded-sm font-medium border transition-colors hover:bg-white/10"
               style={{ borderColor: C.sage, color: C.cream }}
             >
-              See today's prices
+              Angalia bei
             </a>
           </div>
         </div>
 
-        {/* Signature: freshness stamp */}
+        {/* Signature: ness stamp */}
         <div
           className="hidden md:flex absolute right-16 top-24 items-center justify-center w-40 h-40 rounded-full border-4"
           style={{
@@ -178,9 +177,9 @@ export default function MamaNaaKukuShop() {
           }}
         >
           <div className="text-center leading-tight" style={{ fontFamily: "'Fraunces', serif" }}>
-            <div className="text-xs tracking-widest" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>FRESH</div>
-            <div className="text-2xl font-bold my-0.5">TODAY</div>
-            <div className="text-xs tracking-widest" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>GUARANTEED</div>
+            <div className="text-xs tracking-widest" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>MPYA</div>
+            <div className="text-2xl font-bold my-0.5">MPYA</div>
+            <div className="text-xs tracking-widest" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>INAHAKIKISHWA</div>
           </div>
         </div>
       </section>
@@ -188,9 +187,9 @@ export default function MamaNaaKukuShop() {
       {/* ABOUT STRIP */}
       <section className="px-6 py-10 md:px-12 flex flex-wrap gap-8 justify-between items-center border-b" style={{ borderColor: C.creamDim }}>
         {[
-          { label: "Hatched fresh", detail: "Sourced daily, never frozen stock" },
-          { label: "Dressed same-day", detail: "Cleaned to order, not pre-packed" },
-          { label: "Hygienic packaging", detail: "Sealed for the ride to your door" },
+          { label: "Mpya kutoka bandani", detail: "Zinapatikana kila siku ,si bidhaa zilizohifadhiwa" },
+          { label: "Inasindikwa na kufungwa siku hiyo hiyo", detail: "Bidhaa husafishwa baada ya kuagizwa na si iliyofungwa mapema" },
+          { label: "Ufungaji Safi", detail: "Inafungwa vizuri kwa ajili ya safari hadi mlangoni kwako" },
         ].map((item, i) => (
           <div key={i} className="flex-1 min-w-[200px]">
             <p className="text-sm uppercase tracking-wide mb-1" style={{ color: C.rust, fontFamily: "'IBM Plex Mono', monospace" }}>
@@ -235,7 +234,7 @@ export default function MamaNaaKukuShop() {
         </div>
       </section>
 
-      {/* DELIVERY */}
+      {/* Usafirishaji */}
       <section id="delivery" className="px-6 py-20 md:px-12" style={{ backgroundColor: C.green, color: C.cream }}>
         <h2 style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }} className="text-3xl md:text-4xl mb-3">
           Delivery zones
@@ -277,7 +276,7 @@ export default function MamaNaaKukuShop() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section id="reviews" className="px-6 py-20 md:px-12">
+      <section id="Maoni" className="px-6 py-20 md:px-12">
         <h2 style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }} className="text-3xl md:text-4xl mb-10">
           What people say
         </h2>
@@ -324,7 +323,7 @@ export default function MamaNaaKukuShop() {
             className="px-6 py-3 rounded-sm font-medium inline-flex items-center gap-2 w-fit transition-transform hover:-translate-y-0.5"
             style={{ backgroundColor: C.yolk, color: C.greenDeep }}
           >
-            <Phone size={16} /> Order on WhatsApp
+            <Phone size={16} /> Agiza kupitia WhatsApp
           </a>
         </div>
         <div className="flex flex-wrap gap-8 text-sm pt-8 border-t" style={{ borderColor: "rgba(255,255,255,0.12)", color: C.sage }}>
