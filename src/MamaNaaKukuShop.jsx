@@ -35,7 +35,7 @@ const fontImport = `
 }
 `;
 
-const Bidhaa = [
+const products = [
   { name: "Whole Dressed Chicken", desc: "Cleaned, ready for the pot.", price: "TSh 35000", unit: "/ bird" },
   { name: "Chicken Parts", desc: "Breast, thighs, wings, gizzard — sold by cut.", price: "TSh 12000", unit: "/ kg" },
   { name: "Live Chicken", desc: "Pick it live, we prepare it while you wait.", price: "TSh 6000 - TSh 45000", unit: "/ bird" },
