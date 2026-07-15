@@ -294,6 +294,18 @@ export default function MamaNaaKukuShop() {
         </div>
       </section>
 
+     {/* OUR FARM */}
+<section className="px-6 py-20 md:px-12">
+  <h2 style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }} className="text-3xl md:text-4xl mb-10">
+    From our farm
+  </h2>
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="/images/WhatsApp Image 2026-07-15 at 02.10.49 (1).jpeg" alt="Fresh eggs" className="w-full h-48 object-cover rounded-sm" />
+    <img src="/images/WhatsApp Image 2026-07-15 at 02.10.49 (2).jpeg" alt="Chickens" className="w-full h-48 object-cover rounded-sm" />
+    <img src="/images/WhatsApp Image 2026-07-15 at 02.10.49 (3).jpeg" alt="Our flock" className="w-full h-48 object-cover rounded-sm" />
+    <img src="/images/WhatsApp Image 2026-07-15 at 02.10.49 (4).jpeg" alt="Chicken coop" className="w-full h-48 object-cover rounded-sm" />
+  </div>
+</section>
       {/* CONTACT / FOOTER */}
       <footer className="px-6 py-16 md:px-12" style={{ backgroundColor: C.greenDeep, color: C.cream }}>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-10">
