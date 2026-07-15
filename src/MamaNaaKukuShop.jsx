@@ -3,15 +3,15 @@ import { Egg, Truck, Phone, MapPin, Clock, Star, Menu, X, Feather } from "lucide
 
 // ---- Design tokens ----
 const C = {
-  green: "#24331F",     // deep coop-green, primary dark surface
-  greenDeep: "#1B2617",
-  cream: "#FBF2DF",     // eggshell, primary light surface
-  creamDim: "#F1E4C8",
-  yolk: "#E8A430",      // accent — egg yolk gold
-  yolkDeep: "#C7841C",
-  rust: "#A34A28",      // secondary accent — clay/feather rust
-  charcoal: "#241C12",  // text on cream
-  sage: "#93A177",      // muted text on green
+  green: "#1B4965",     // deep coop-green, primary dark surface
+  greenDeep: "#0F2E42",
+  cream: "#F4FAFF",     // eggshell, primary light surface
+  creamDim: "#E3F2FD",
+  yolk: "#F4A340",      // accent — egg yolk gold
+  yolkDeep: "#D6862A",
+  rust: "#2C7DA0",      // secondary accent — clay/feather rust
+  charcoal: "#12232E",  // text on cream
+  sage: "#9DC3E0",      // muted text on green
 };
 
 const fontImport = `
@@ -36,18 +36,18 @@ const fontImport = `
 `;
 
 const products = [
-  { name: "Whole Dressed Chicken", desc: "Cleaned, ready for the pot.", price: "TSh 35000", unit: "/ bird" },
-  { name: "Chicken Parts", desc: "Breast, thighs, wings, gizzard — sold by cut.", price: "TSh 12000", unit: "/ kg" },
-  { name: "Live Chicken", desc: "Pick it live, we prepare it while you wait.", price: "TSh 6000 - TSh 45000", unit: "/ bird" },
-  { name: "Full Crate of Eggs", desc: "30 eggs, farm-graded.", price: "TSh 12000", unit: "/ crate" },
-  { name: "Half Crate of Eggs", desc: "15 eggs, farm-graded.", price: "TSh 6500", unit: "/ half crate" },
-  { name: "Egg Tray", desc: "Single tray for the home fridge.", price: "TSh 2500", unit: "/ tray" },
+  { name: "Kuku mzima aliyetengenezwa", desc: "Amesafishwa tayari kwa kupikwa.", price: "TSh 35000", unit: "/ bird" },
+  { name: "Vipande vya Kuku", desc: "KIdali, Mapaja, Mabawa - vyote vinauzwqa kwa vipande.", price: "TSh 12000", unit: "/ kg" },
+  { name: "Kuku Hai", desc: "Chagua akiwa hai, tunamwandaa ukisubiri.", price: "TSh 6000 - TSh 45000", unit: "/ bird" },
+  { name: "Trei kamili ya Mayai", desc: "Mayai 30, Yenye ubora.", price: "TSh 12000", unit: "/ crate" },
+  { name: "Nusu trei ya Mayai", desc: "Mayai 15, Yenye ubora.", price: "TSh 6500", unit: "/ half crate" },
+  { name: "Trei ya mayai", desc: "Trei ya mayai kwa ajili ya friji nyumbani.", price: "TSh 2500", unit: "/ tray" },
 ];
 
 const zones = [
-  { area: "Zone 1 — Nearby streets", time: "Same day, 2–4 hrs" },
-  { area: "Zone 2 — Across town", time: "Same day, by evening" },
-  { area: "Zone 3 — Outskirts", time: "Next-day delivery" },
+  { area: "Zone 1 — Maeneo ya Karibu", Muda: "siku hiyohiyo, Masaa 2-4" },
+  { area: "Zone 2 — Maeneo ya mbali kidogo", Muda: "Siku hiyohiyo ila inategemea na umbali" },
+  { area: "Zone 3 — Maeneo ya mbali", Muda: "Hufika kutokana na umbali wa sehemu husika" },
 ];
 
 const testimonials = [
@@ -124,7 +124,7 @@ export default function MamaNaaKukuShop() {
             className="text-xs tracking-[0.25em] uppercase mb-5"
             style={{ color: C.sage, fontFamily: "'IBM Plex Mono', monospace", opacity: shown ? 1 : 0, animation: shown ? "riseIn 0.6s ease-out" : "none" }}
           >
-            Dar es Salaamt; Family-run since day one
+            Dar es Salaam, Huduma ni popote na ni muda wowote ule KARIBUNI SANA
           </p>
           <h1
             className="text-4xl md:text-6xl leading-[1.05] mb-6"
@@ -204,7 +204,7 @@ export default function MamaNaaKukuShop() {
       <section id="products" className="px-6 py-20 md:px-12">
         <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
           <h2 style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }} className="text-3xl md:text-4xl">
-            Today's shelf
+            Bidhaa za leo
           </h2>
           <p className="text-sm max-w-sm" style={{ color: C.charcoal, opacity: 0.6 }}>
             Prices update with market rates. Message us on WhatsApp to confirm before ordering.
