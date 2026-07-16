@@ -1,0 +1,16 @@
+{
+  "name": "Mama Naa Kuku Shop",
+  "short_name": "Naa Kuku",
+  "description": "Fresh chicken and eggs, delivered same day.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4FAFF",
+  "theme_color": "#1B4965",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
